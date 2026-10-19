@@ -50,7 +50,7 @@
 
 ### 🎵 Медиаплееры
 - **Музыкальный плеер в стиле Telegram**: встроенный аудиоконтроллер с возможностью воспроизведения, паузы, перемотки, переключения треков и сворачиваемым миниплеером.
-- **Встроенный видеоплеер**: просмотр видеозаписей со звуком, регулировкой громкости, поддержкой аудиодорожек и полноэкранным режимом.
+- **Встроенный видеоплеер**: просмотр видеозаписей с регулировкой громкости, поддержкой аудиодорожек и полноэкранным режимом.
 
 ### 👥 Мультиаккаунт
 - Хранение нескольких сессий и мгновенное переключение между аккаунтами без повторной авторизации.
@@ -103,3 +103,66 @@ cd OpenVK-Messenger-Flutter
 
 # Получение пакетов
 flutter pub get
+```
+
+### Запуск в режиме разработки
+```bash
+# macOS
+flutter run -d macos
+
+# Windows
+flutter run -d windows
+
+# Linux
+flutter run -d linux
+
+# Android
+flutter run -d android
+```
+
+### Сборка релизной версии
+```bash
+# macOS App / DMG
+flutter build macos --release
+
+# Windows Exe
+flutter build windows --release
+
+# Linux App
+flutter build linux --release
+
+# Android APK
+flutter build apk --release
+```
+
+---
+
+## 📁 Структура проекта
+
+```text
+lib/
+├── api/              # Работа с OpenVK API, авторизация, LongPoll слушатель
+├── models/           # Модели данных (User, Message, Conversation, Attachment)
+├── providers/        # State management (ChatProvider, ThemeProvider, MultiAccountProvider)
+├── screens/          # Экраны (Авторизация, Список чатов, Диалог, Настройки, Профиль)
+├── themes/           # Парсер .tdesktop-theme, цветовые палитры, стили баблов
+├── widgets/          # Переиспользуемые виджеты (аудиоплеер, видеоплеер, баблы, вложения)
+└── main.dart         # Точка входа в приложение и инициализация сервисов
+```
+
+---
+
+## 🤝 Вклад в проект (Contributing)
+
+Мы рады любому вкладу в развитие проекта:
+1. Форкните репозиторий.
+2. Создайте свою ветку (`git checkout -b feature/awesome-feature`).
+3. Сделайте коммит ваших изменений (`git commit -m 'Add awesome feature'`).
+4. Отправьте ветку в origin (`git push origin feature/awesome-feature`).
+5. Откройте **Pull Request**.
+
+---
+
+## 📄 Лицензия
+
+Проект распространяется под лицензией **MIT**. Подробности в файле [LICENSE](LICENSE).
