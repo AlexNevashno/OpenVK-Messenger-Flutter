@@ -160,9 +160,3 @@ lib/
 3. Сделайте коммит ваших изменений (`git commit -m 'Add awesome feature'`).
 4. Отправьте ветку в origin (`git push origin feature/awesome-feature`).
 5. Откройте **Pull Request**.
-
----
-
-## 📄 Лицензия
-
-Проект распространяется под лицензией **MIT**. Подробности в файле [LICENSE](LICENSE).
